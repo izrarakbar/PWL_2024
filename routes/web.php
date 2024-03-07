@@ -3,8 +3,8 @@
 
 use Illuminate\Support\Facades\Route;
 
-// use App\Http\Controllers\PageController;
-// use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\PhotoController;
 
 
 /*
@@ -25,23 +25,28 @@ use App\Http\Controllers\BeautyHealthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\BabyController;
 use App\Http\Controllers\FoodBeverageController;
+use App\Http\Controllers\KategoriController;
+use App\Http\Controllers\levelController;
+use App\Http\Controllers\levelControllerController;
+use App\Http\Controllers\KategoriControllerController;
+// Route::get('/level', [levelController::class, 'insertData']);
+Route::get('/kategori', [KategoriController::class, 'insertData']);
+// Route::get('/food', [FoodBeverageController::class, 'foodBeverage']);
 
-Route::get('/food', [FoodBeverageController::class, 'foodBeverage']);
+// Route::get('/beauty', [BeautyHealthController::class, 'BeautyHealth']);
 
-Route::get('/beauty', [BeautyHealthController::class, 'BeautyHealth']);
+// Route::get('/baby', [BabyController::class, 'babyKid']);
 
-Route::get('/baby', [BabyController::class, 'babyKid']);
+// Route::get('/homecare', [HomeCareController::class, 'homeCare']);
 
-Route::get('/homecare', [HomeCareController::class, 'homeCare']);
+// Route::get('/home', [HomeController::class, 'home']);
 
-Route::get('/home', [HomeController::class, 'home']);
-
-Route::get('/penjualan', [PenjualanController::class, 'penjualan']);
+// Route::get('/penjualan', [PenjualanController::class, 'penjualan']);
 
 
-use App\Http\Controllers\UserController;
+// use App\Http\Controllers\UserController;
 
-Route::get('/user/{id}/name/{name}', [UserController::class, 'user']);
+// Route::get('/user/{id}/name/{name}', [UserController::class, 'user']);
 
 
 
@@ -49,7 +54,7 @@ Route::get('/user/{id}/name/{name}', [UserController::class, 'user']);
 
 // Route::get('/greeting', [WelcomeController::class, 'greeting']);
 
-// Route::get('/greeting', function () {
+// Route::get('/greeting', function () {s
 //     return view('hello', ['name' => 'Izrar']);
 //     });
 

@@ -8,7 +8,6 @@ class FoodBeverageController extends Controller
 {
     public function foodBeverage()
     {
-
         return view('foodBeverage');
     }
 }
